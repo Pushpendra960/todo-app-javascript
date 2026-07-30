@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JavaScript To-Do List Application">
+    <meta name="keywords" content="Todo App, JavaScript, CRUD, LocalStorage">
+    <meta name="author" content="Pushpendra Singh">
+
+    <title>Advanced To-Do App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>📝 Advanced To-Do List</h1>
+
+            <p>
+                Manage your daily tasks efficiently
+            </p>
+
+        </header>
+
+
+
+        <!-- Input Section -->
+
+        <section class="input-section">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task..."
+                aria-label="Task Input"
+            >
+
+            <button id="addTaskBtn">
+                Add Task
+            </button>
+
+        </section>
+
+
+
+        <!-- Filter Buttons -->
+
+        <section class="filter-section">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="active">
+                Active
+            </button>
+
+            <button class="filter-btn" data-filter="completed">
+                Completed
+            </button>
+
+        </section>
+
+
+
+        <!-- Task Counter -->
+
+        <section class="task-info">
+
+            <span id="taskCount">
+                Total Tasks : 0
+            </span>
+
+            <button id="clearCompleted">
+                Clear Completed
+            </button>
+
+        </section>
+
+
+
+        <!-- Todo List -->
+
+        <ul id="taskList">
+
+            <!-- Dynamic Tasks -->
+
+        </ul>
+
+
+
+        <footer>
+
+            <p>
+                Built using HTML, CSS & JavaScript
+            </p>
+
+        </footer>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
